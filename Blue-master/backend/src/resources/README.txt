@@ -1,0 +1,1 @@
+Install MYSQL according to the instructions https://www.onlinetutorialspoint.com/mysql/install-mysql-on-windows-10-step-by-step.html for Windows and create user masiusr with password masi.
