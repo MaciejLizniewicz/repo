@@ -33,7 +33,6 @@ FOREIGN KEY (test) REFERENCES masibaza.test(test_id));
 create table if not exists masibaza.possible_ans(
 answer varchar(255),
 question int(11),
-PRIMARY KEY (answer), 
 FOREIGN KEY (question) REFERENCES masibaza.question(question_id));
 
 create table if not exists masibaza.roles(
