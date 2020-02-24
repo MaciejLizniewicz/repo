@@ -39,7 +39,7 @@ public class ApplicationConfig {
     public DataSource dataSource() {
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/masibaza");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/masibaza?autoReconnect=true&useSSL=false");
 		dataSource.setUsername("masiusr");
 		dataSource.setPassword("masi");
         return dataSource;

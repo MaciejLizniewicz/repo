@@ -4,7 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "users")
 @Data
 @EqualsAndHashCode(exclude = "role")
 @NoArgsConstructor
@@ -20,6 +20,7 @@ public class ApplicationUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "user_id")
     private long id;
 
     private String firstName;

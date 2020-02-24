@@ -19,7 +19,11 @@ public class Role {
         this.name = name;
     }
     
-    @Id
+    public Role() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
